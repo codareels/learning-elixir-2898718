@@ -1,9 +1,9 @@
 defmodule Wizard.DataChallenge do
   @moduledoc """
-  This is a module to challenge what you have learned about 
+  This is a module to challenge what you have learned about
   data types and operators.
 
-  The challenge is to complete the two functions in the 
+  The challenge is to complete the two functions in the
   module.
 
   multiplier/2
@@ -34,6 +34,7 @@ defmodule Wizard.DataChallenge do
   Return the product.
   """
   def multiplier(a, b) do
+    a * b
 
   end
 
@@ -42,19 +43,20 @@ defmodule Wizard.DataChallenge do
   Return the product.
   """
   def multiplier(a, b, c) do
-
+    a * b * c
   end
 
   @doc"""
-  Calculate the percentage b of a. 
-  Return the percentage as a string concatenated with the 
+  Calculate the percentage b of a.
+  Return the percentage as a string concatenated with the
   percent sign (%).
 
   Hint: to round a float, use the Kernal function
   round/1.
   """
   def percent(a, b) do
-
+    answer = round((b/a) * 100)
+    to_string(answer)<>"%"
   end
 
   @doc """
